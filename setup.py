@@ -11,6 +11,7 @@ from torch.utils.cpp_extension import BuildExtension, CUDAExtension, CUDA_HOME
 
 ROOT_DIR = os.path.dirname(__file__)
 
+# ? the difference between O2 and O3 
 # Compiler flags.
 CXX_FLAGS = ["-g", "-O2", "-std=c++17"]
 # TODO(woosuk): Should we use -O3?

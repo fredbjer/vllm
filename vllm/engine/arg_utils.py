@@ -20,8 +20,8 @@ class EngineArgs:
     dtype: str = 'auto'
     seed: int = 0
     worker_use_ray: bool = False
-    pipeline_parallel_size: int = 1
-    tensor_parallel_size: int = 1
+    pipeline_parallel_size: int = 1 ## support pp
+    tensor_parallel_size: int = 1   ## support tp 
     block_size: int = 16
     swap_space: int = 4  # GiB
     gpu_memory_utilization: float = 0.90

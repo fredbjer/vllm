@@ -4,7 +4,9 @@ from typing import AsyncGenerator
 
 from fastapi import BackgroundTasks, FastAPI, Request
 from fastapi.responses import JSONResponse, Response, StreamingResponse
-import uvicorn
+## uvicorn is asgi server, fastapi is app server.
+## client call asgi, asgi call app. 
+import uvicorn 
 
 from vllm.engine.arg_utils import AsyncEngineArgs
 from vllm.engine.async_llm_engine import AsyncLLMEngine
